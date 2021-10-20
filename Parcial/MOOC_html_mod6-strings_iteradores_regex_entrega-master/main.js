@@ -76,7 +76,7 @@ const getById = id => document.getElementById(id);
     view.innerHTML = result;
   };
 
-  // TODO
+  //Funcion para contar el numero de repeticiones de cada palabra teniendo en cuenta mayus y minus
   const word_index = () => {
   };
 
@@ -114,7 +114,7 @@ const getById = id => document.getElementById(id);
     view.innerHTML = result;
   };
 
-  // TODO
+  //Funcion para buscar palabras dentro de un texto
   const search_words = () => {
   };
 

@@ -1,30 +1,37 @@
 <!DOCTYPE html><html>
-<head><meta charset="UTF-8">
-<script type="text/javascript" source="stopwords-es.json"></script>
-<script type="text/javascript" source="script.js"></script>
+<head>
+  <title>Que no te lo cuenten</title>
+  <meta charset="UTF-8">
+  <meta name="author" content="Diego Del Rio">
+  <link type="text/css" rel="stylesheet" href="estilo.css">
+  <script type="text/javascript" source="stopwords-es.json"></script>
+  <script type="text/javascript" src="main.js"></script>
 </head>
 
 <body>
-<h1>Análisis de texto</h1>
+  <h1>
+    Análisis de texto
+  </h1>
 
-Introduzca un texto para analizarlo:<br>
-<textarea rows=10 cols=50 id="text" name="text"></textarea>
+  Introduzca un texto para analizarlo:<br>
+  <textarea rows=10 cols=50 id="text" name="text"></textarea>
 
-<p>
-  <button class="count" >Contar</button><!-- TODO-->
-  <button class="letter_index" >Repeticiones de letras</button>
-  <button class="word_index" >Repeticiones de palabras</button>
-  <button class="sentence_index" >Repeticiones de frases</button>
-</p>
-<p>
-  Buscar repeticiones que contienen:
-  <input type="text" id="search" name="search" >
-  <button class="search_letters" >Buscar letras</button>
-  <button class="search_words" >Buscar palabras</button>
-  <button class="search_sentences" >Buscar frases</button>
-</p>
+  <p>
+    <button class="count" >Contar</button><!-- TODO-->
+    <button class="letter_index" >Repeticiones de letras</button>
+    <button class="word_index" >Repeticiones de palabras</button>
+    <button class="sentence_index" >Repeticiones de frases</button>
+  </p>
 
-<pre id="view"></pre>
+  <p>
+    Buscar repeticiones que contienen:
+    <input type="text" id="search" name="search" >
+    <button class="search_letters" >Buscar letras</button>
+    <button class="search_words" >Buscar palabras</button>
+    <button class="search_sentences" >Buscar frases</button>
+  </p>
+
+  <pre id="view"></pre>
 
 </body>
 </html>
