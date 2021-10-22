@@ -78,6 +78,19 @@ const getById = id => document.getElementById(id);
 
   //Funcion para contar el numero de repeticiones de cada palabra teniendo en cuenta mayus y minus
   const word_index = () => {
+    let {text, view} = getIO();
+
+    let oredered_word =
+      word_array(text)
+        .map(el => el.toLowerCase())
+        .sort();
+
+    let result =
+      repetitions(oredered_word)
+        .map(el => `${el.s}: ${el.n}`)
+        .join("\n");
+    
+    view.innerHTML = result;
   };
 
   const sentence_index = () => {
