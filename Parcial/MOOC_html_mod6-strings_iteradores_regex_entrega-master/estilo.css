@@ -1,5 +1,5 @@
 html{
-    background-color: green;
+    background-color: #bc5a45;
 }
 
 body{
@@ -16,7 +16,7 @@ button {
     text-decoration: none;
     margin: 2px;
     color: var(--primary);
-    background: white;
+    background: #f18973;
     border: 1px solid var(--primary);
     height: 20px;
     font-size: 9px;
@@ -27,5 +27,5 @@ button {
 }
 
 button:hover{
-    background-color:rgb(216, 206, 168);
+    background-color:white;
 }
