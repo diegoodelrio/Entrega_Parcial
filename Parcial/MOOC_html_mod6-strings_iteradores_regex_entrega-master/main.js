@@ -129,6 +129,22 @@ const getById = id => document.getElementById(id);
 
   //Funcion para buscar palabras dentro de un texto
   const search_words = () => {
+    let {text, view, search} = getIO();
+
+    let searched_words =
+      word_array(text)
+        .map(el => el.toLowerCase())
+        .filter(el => el.includes(search.toLowerCase()))
+        .sort();
+  
+    let result = `Hay ${searched_words.length} palabras que contienen '${search}'.\n\n`
+  
+    result +=
+      repetitions(searched_words)
+        .map(el => `${el.n} repeticiones de:   ${el.s}`)
+        .join("\n");
+  
+    view.innerHTML = result;
   };
 
   const search_sentences = () => {

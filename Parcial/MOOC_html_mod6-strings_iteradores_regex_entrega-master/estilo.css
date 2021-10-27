@@ -1,3 +1,31 @@
 html{
     background-color: green;
 }
+
+body{
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    padding-bottom: 10px;
+    margin: auto;
+}
+
+button { 
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    text-decoration: none;
+    margin: 2px;
+    color: var(--primary);
+    background: white;
+    border: 1px solid var(--primary);
+    height: 20px;
+    font-size: 9px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: ease-in 0.2s all;
+    padding: 0 8px 0 8px;
+}
+
+button:hover{
+    background-color:rgb(216, 206, 168);
+}
